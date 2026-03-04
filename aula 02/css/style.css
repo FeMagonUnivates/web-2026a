@@ -1,0 +1,47 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #3a3a3a;
+    padding: 20px;
+}
+
+header {
+    background-color: #d33d3d;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+}
+
+.secao1 {
+  padding: 40px 20px;
+  background-color: #f8fafc;
+}
+
+.titulo-secao {
+  text-align: center;
+  font-size: 32px;
+  color: #1e3a8a;
+}
+
+.imagem-batata {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #000;
+}
+
+video {
+    width: 350px;
+    height: auto;
+}
+
+h1 {
+    font-size: 36px;
+}

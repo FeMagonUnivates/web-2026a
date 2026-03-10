@@ -8,33 +8,53 @@
 /* Corpo da página */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
+    background-color: rgb(254, 208, 187);
     color: #3a3a3a;
     padding: 20px;
 }
 
 header {
-    background-color: #d33d3d;
+    background-color: rgb(70, 18, 32);
     color: rgb(255, 255, 255);
     padding: 5px;
     text-align: center;
 }
 
-.secao1 {
-  padding: 40px 20px;
-  background-color: #f8fafc;
+.imagem-batata {
+    display: block;
+    margin: 20px auto;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+}
+
+ol,
+ul {
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.listas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .titulo-secao {
-  text-align: center;
-  font-size: 32px;
-  color: #1e3a8a;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(70, 18, 32);
 }
 
 .imagem-batata {
-  width: 250px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 20px #000;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #000;
 }
 
 video {

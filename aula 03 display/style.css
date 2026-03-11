@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #F8F9FA;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    height: 80px;
+    align-items: center;
+}
+
+.img-header {
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+    background-color: white;
+    border-radius: 5px
+}
+
+.img-meio {
+    width: 300px;
+    height: auto;
+    border: 1px solid #343A40;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgb(141, 141, 141);
+}
+
+.menu {
+    display: flex;
+    margin-right: 50px;
+    width: 500px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sec2 {
+    background-color: #DEE2E6;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.titulo-sobre {
+    font-size: 50px;
+    text-align: center;
+}
+
+.texto-sobre {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.texto-sobre p {
+    text-align: justify;
+    width: 450px;
+}
+
+.sec3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background: linear-gradient(100deg, #212529, #6C757D);
+}
+
+.btn-chat {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-size: 50px;
+    padding: 40px;
+    border-radius: 100px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.btn-chat:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}

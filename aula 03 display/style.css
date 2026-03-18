@@ -4,7 +4,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
     background-color: #F8F9FA;
 }
 
@@ -133,7 +133,7 @@ footer {
     cursor: pointer;
 }
 
-.icone:hover .circulo{
+.icone:hover .circulo {
     background-color: #ADB5BD;
 }
 

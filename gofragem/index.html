@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gofragem AM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="btnMenu" class="menu">
+            ☰ Menu
+        </div>
+
+        <nav id="menu01" class="nav">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Tipos</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <div class="logo">
+            <h1>Gofragem Arroio do Meio</h1>
+        </div>
+    </header>
+</body>
+
+<script>
+    const btn = document.getElementById("btnMenu");
+    const menu = document.getElementById("menu01");
+
+    btn.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+</script>
+
+</html>

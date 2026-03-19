@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <button onclick="diminuir()">-</button>
-
-    <span id="numero">0</span>
-
-    <button onclick="aumentar()">+</button>
+    <div>
+        <button onclick="diminuir()" class="botao">-</button>
+        <span id="numero" class="num">0</span>
+        <button onclick="aumentar()" class="botao">+</button>
+    </div>
 
     <script>
-        let num = 0;
+        let num1 = 0;
 
         function aumentar() {
-            num++;
-            document.getElementById("numero").textContent = num;
+            num1++;
+            document.getElementById("numero").textContent = num1;
         }
 
         function diminuir() {
-            num--;
-            document.getElementById("numero").textContent = num;
+            num1--;
+            document.getElementById("numero").textContent = num1;
         }
     </script>
 </body>

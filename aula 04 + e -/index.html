@@ -9,7 +9,7 @@
 
 <body>
     <div>
-        <button onclick="diminuir()" class="botao">-</button>
+        <button onclick="diminuir(), mudarCor()" class="botao">-</button>
         <span id="numero" class="num">0</span>
         <button onclick="aumentar()" class="botao">+</button>
     </div>
@@ -25,6 +25,14 @@
         function diminuir() {
             num1--;
             document.getElementById("numero").textContent = num1;
+        }
+
+        function mudarCor() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
         }
     </script>
 </body>

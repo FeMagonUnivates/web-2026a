@@ -15,6 +15,7 @@ header {
     color: white;
     align-items: center;
     padding: 10px;
+    height: 60px;
 }
 
 .logo {
@@ -103,6 +104,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
+    height: 60px;
 }
 
 .voltar {
@@ -114,9 +116,9 @@ footer {
 
 .circulo {
     background-color: #000000;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     transition: background-color 0.5s;
 }
 

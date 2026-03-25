@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Mostrar na tela</h2>
+
+            <button id="btnMostrar">Mostrar na tela</button>
+            <span id="resultado"></span>
+        </section>
+
+        <section>
+            <h2>2. Contador</h2>
+
+            <button id="btnDiminuir">-</button>
+            <span id="numero">0</span>
+            <button id="btnAumentar">+</button>
+        </section>
+
+        <section>
+            <h2>3. Calculadora</h2>
+
+            <input id="calcNum1" type="number" placeholder="Escreva um número...">
+            <input id="calcNum2" type="number" placeholder="Escreva um número...">
+            <br>
+            <br>
+            <button id="btnAdicao">Mais</button>
+            <button id="btnSubtracao">Menos</button>
+            <button id="btnMultiplicacao">Multiplicacao</button>
+            <button id="btnDivisao">Divisao</button>
+
+            <p>Resultado: </p>
+            <span id="calcResultado"></span>
+        </section>
+
+        <section>
+            <h2>4. Lista de itens</h2>
+
+            <input id="txtItem" type="text" placeholder="Insira um intem...">
+            <button id="btnAddLista">Adicionar na lista</button>
+            <ul id="lista"></ul>
+        </section>
+    </main>
+    <script>
+        const butao = document.getElementById("btnMostrar");
+        const texto = document.getElementById("resultado");
+
+        const menos = document.getElementById("btnDiminuir");
+        const mais = document.getElementById("btnAumentar");
+
+        const adicao = document.getElementById("btnAdicao");
+        const subtracao = document.getElementById("btnSubtracao");
+        const multiplicacao = document.getElementById("btnMultiplicacao");
+        const divisao = document.getElementById("btnDivisao");
+        const calc1 = document.getElementById("calcNum1");
+        const calc2 = document.getElementById("calcNum2");
+
+        const txtItem = document.getElementById("txtItem");
+        const btnAddLista = document.getElementById("btnAddLista");
+        const lista = document.getElementById("lista");
+
+        let numContador = document.getElementById("numero");
+        let calcResultado = document.getElementById("calcResultado");
+        let num = 0;
+
+        function mostrar() {
+            texto.textContent = "oi";
+        }
+
+        function diminuir() {
+            num--;
+            numContador.textContent = num;
+        }
+
+        function aumentar() {
+            num++;
+            numContador.textContent = num;
+        }
+
+        function adicaoCalc() {
+            const valorCalc1 = Number(calc1.value);
+            const valorCalc2 = Number(calc2.value);
+
+            calcResultado.textContent = valorCalc1 + valorCalc2;
+
+            calc1.value = "";
+            calc2.value = "";
+        }
+
+        function subtracaoCalc() {
+            const valorCalc1 = Number(calc1.value);
+            const valorCalc2 = Number(calc2.value);
+
+            calcResultado.textContent = valorCalc1 - valorCalc2;
+
+            calc1.value = "";
+            calc2.value = "";
+        }
+
+        function multiplicacaoCalc() {
+            const valorCalc1 = Number(calc1.value);
+            const valorCalc2 = Number(calc2.value);
+
+            calcResultado.textContent = valorCalc1 * valorCalc2;
+
+            calc1.value = "";
+            calc2.value = "";
+        }
+
+        function divisaoCalc() {
+            const valorCalc1 = Number(calc1.value);
+            const valorCalc2 = Number(calc2.value);
+
+            if (calc2 === 0) {
+                calcResultado.textContent = "Não da pra dividir por zero meu bruxo";
+                calc1.value = "";
+                calc2.value = "";
+            } else {
+                calcResultado.textContent = valorCalc1 / valorCalc2;
+
+                calc1.value = "";
+                calc2.value = "";
+            }
+
+        }
+
+        function adicionarItem() {
+            const valorItem = txtItem.value;
+
+            const li = document.createElement("li");
+            li.textContent = valorItem;
+
+            lista.appendChild(li);
+
+            txtItem.value = "";
+        }
+
+        butao.addEventListener('click', mostrar);
+
+        menos.addEventListener('click', diminuir);
+        mais.addEventListener('click', aumentar);
+
+        adicao.addEventListener('click', adicaoCalc);
+        subtracao.addEventListener('click', subtracaoCalc);
+        multiplicacao.addEventListener('click', multiplicacaoCalc);
+        divisao.addEventListener('click', divisaoCalc);
+
+        btnAddLista.addEventListener('click', adicionarItem);
+
+    </script>
+</body>
+
+</html>

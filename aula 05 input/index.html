@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exemplos com Input</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Lendo o valor de um input</h2>
+
+            <label for="nome">Algo</label>
+            <input id="inputNome" placeholder="Escreva algo...">
+            <button id="butao">Mostrar na tela</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+    <script>
+        const butao = document.getElementById("butao");
+        let input = document.getElementById("inputNome");
+        const texto = document.getElementById("resultado");
+
+        function mostrar() {
+            const valorInput = input.value;
+
+            document.getElementById("resultado").textContent = valorInput;
+            window.alert(valorInput);
+            console.log(valorInput);
+
+            input.value = "";
+        }
+
+        butao.addEventListener('click', mostrar);
+
+    </script>
+</body>
+
+</html>

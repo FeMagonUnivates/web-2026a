@@ -14,7 +14,6 @@ Este repositório reúne projetos simples desenvolvidos para a web utilizando:
 
 Abra o terminal do VS Code e execute:
 
-```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 
 # 🚀 Criando um repositório no GitHub

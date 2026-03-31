@@ -80,11 +80,6 @@ Para adicionar **todos** os arquivos modificados:
 git add .
 ```
 
-Ou para adicionar um arquivo específico:
-```bash
-git add nome-do-arquivo.txt
-```
-
 ---
 
 ## 💬 7.3 Criar um commit

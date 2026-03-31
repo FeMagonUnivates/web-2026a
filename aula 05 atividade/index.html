@@ -120,7 +120,7 @@
             const valorCalc1 = Number(calc1.value);
             const valorCalc2 = Number(calc2.value);
 
-            if (calc2 === 0) {
+            if (valorCalc2 === 0) {
                 calcResultado.textContent = "Não da pra dividir por zero meu bruxo";
                 calc1.value = "";
                 calc2.value = "";
@@ -136,12 +136,16 @@
         function adicionarItem() {
             const valorItem = txtItem.value;
 
-            const li = document.createElement("li");
-            li.textContent = valorItem;
+            if (valorItem == "") {
+                return;
+            } else {
+                const li = document.createElement("li");
+                li.textContent = valorItem;
 
-            lista.appendChild(li);
+                lista.appendChild(li);
 
-            txtItem.value = "";
+                txtItem.value = "";
+            }
         }
 
         butao.addEventListener('click', mostrar);

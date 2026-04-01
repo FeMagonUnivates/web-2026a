@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Av_01</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <header>
+            <h1>Músicas e Bandas</h1>
+        </header>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+    </div>
+    <section class="sec1">
+        <h2>O que é música?</h2>
+
+        <p class="texto">Música é uma forma de expressar o que você está sentindo através de sons, muitas vezes usando
+            instrumentos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ab sit possimus, in
+            distinctio eaque non est voluptatibus iste totam neque voluptates ipsum adipisci beatae consectetur
+            explicabo facilis? Iusto, sequi?</p>
+
+        <img id="imagem" src="img/musica.jpg" alt="imagem Música">
+        <button id="curtir">Curtir</button>
+        <span id="contador">0</span>
+
+    </section>
+    <section class="sec2">
+        <h2>Guns'n Roses</h2>
+        <ul>
+            <li>You could be mine</li>
+            <li>Patience</li>
+            <li>Estranged</li>
+            <li>Live and let die</li>
+        </ul>
+        <a class="link-externo" href="https://www.youtube.com/watch?v=3f2g4RMfhS0">Link externo</a>
+    </section>
+    <footer>
+        <div class="rodape">
+            <header>
+                <h1>Fernando M.W.</h1>
+            </header>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+        </div>
+    </footer>
+
+    <script>
+        const botao = document.getElementById("curtir");
+        const imagem = document.getElementById("imagem");
+
+        let numContador = document.getElementById("contador");
+        let num = 0;
+
+        function alerta() {
+            alert("Guns vai tocar em POA dia 01/04/2026")
+        }
+
+        function aumentar() {
+            num++;
+            numContador.textContent = num;
+        }
+
+        botao.addEventListener('click', aumentar)
+        imagem.addEventListener('click', alerta)
+
+    </script>
+</body>
+
+</html>

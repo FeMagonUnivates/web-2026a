@@ -8,10 +8,8 @@ if ($imc < 18.5) {
     echo "Peso está abaixo no normal.";
 } elseif ($imc <= 24.9 ) {
     echo "Peso está normal.";
-} 
 } elseif ($imc <= 29.9 ) {
     echo "Você está com sobrepeso.";
-} 
 } else {
     echo "Você está obeso.";
 }

@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $modelo = $_POST["modelo"];
     $ano = $_POST["ano"];
     
-    require_once "Carro.php";
+    include "Carro.php";
     
     $carro = new Carro($marca, $modelo, $ano);
     $carro->imprimirFicha();

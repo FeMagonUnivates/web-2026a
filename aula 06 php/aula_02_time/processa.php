@@ -6,7 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $estadio = $_POST["estadio"];
     $cor = $_POST["cor"];
 
-    require_once "TimeFutebol.php";
+    include "TimeFutebol.php";
+    
     $time = new TimeFutebol($nome, $fundacao, $estadio, $cor);
     $time->imprimeAtributos();
 }

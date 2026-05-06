@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    include "ContaBancaria.php";
+    require_once "ContaBancaria.php";
     
     $conta = new ContaBancaria($nome, $numero_conta, $saldo);
     $conta->exibirInformacoes();

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Teste API</title>
+</head>
+
+<body>
+
+    <h1>Consumo de API do MockAPI</h1>
+
+    <h2>Cadastrar Povo Papel</h2>
+    <form id="form">
+        <label>Tipo: <input type="text" id="tipo"></label><br><br>
+        <label>Gramatura: <input type="number" id="gramatura"></label><br><br>
+        <label>Cor: <input type="cor" id="cor"></label><br><br>
+
+        <button type="submit">Cadastrar papel</button>
+    </form>
+
+    <pre id="resposta"></pre>
+
+    <script>
+        const botao = document.getElementById('form');
+
+        botao.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const tipo = document.getElementById('tipo').value;
+            const gramatura = document.getElementById('gramatura').value;
+            const cor = document.getElementById('cor').value;
+
+            const response = await fetch('https://6a28a41b4e1e783349a5d0ff.mockapi.io/api/papel/folha', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ tipo, gramatura, cor }),
+            });
+
+            const data = await response.json();
+            document.getElementById('resposta').textContent = JSON.stringify(data);
+        });
+    </script>
+
+</body>
+
+</html>
